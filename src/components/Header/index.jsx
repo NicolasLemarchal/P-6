@@ -7,7 +7,7 @@ const HeaderLogo = styled.img`
 `
 
 const HeaderContainer = styled.nav`
-  margin: 30px 100px;
+  margin: 40px 100px 0px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
