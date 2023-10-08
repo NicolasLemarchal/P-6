@@ -7,6 +7,7 @@ const FooterLogo = styled.img`
   left: 0;
   width: 100%;
   height: 209px;
+  object-fit: cover;
 `
 
 function Footer() {
