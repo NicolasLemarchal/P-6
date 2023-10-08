@@ -1,24 +1,18 @@
 import styled from 'styled-components'
-import FooterImg from '../../assets/Footer/D_Footer.png'
-
-const FooterContainer = styled.footer`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-top: 60px;
-`
+import FooterImg from '../../assets/Footer/Desktop_Footer.png'
 
 const FooterLogo = styled.img`
-  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 209px;
 `
 
 function Footer() {
 
   return (
-    <FooterContainer>
-      <FooterLogo src={FooterImg} />
-    </FooterContainer>
+    <FooterLogo src={FooterImg} />
   )
 }
 
