@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import HeaderImg from '../../assets/Header/Logo_Header.png'
+import './header.css'
 
 const HeaderLogo = styled.img`
   height: 70px;
@@ -20,23 +21,14 @@ const NavContainer =styled.div`
   gap: 57px;
 `
 
-const NavLink = styled(Link)`
-  font-weight: 500;
-  font-size: 24px;
-  color:#FF6060;
-  text-decoration: none;
-`
-
 function Header() {
 
   return (
     <HeaderContainer>
-      <Link to="/">
-        <HeaderLogo src={HeaderImg} />
-      </Link>
+      <HeaderLogo src={HeaderImg} />
       <NavContainer>
         <NavLink to="/">
-          Accueil
+          Acceuil
         </NavLink>
         <NavLink to="/APropos">
           A Propos

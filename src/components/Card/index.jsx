@@ -1,59 +1,48 @@
 import PropTypes from 'prop-types'
-import { useState } from 'react'
 import styled from 'styled-components'
-import colors from '../../utils/style/colors'
 import DefaultPicture from '../../assets/Card/profile.png'
 
-const CardLabel = styled.span`
-  color: ${colors.primary};
-  font-size: 22px;
-  font-weight: normal;
-  padding-left: 15px;
-`
-
-const CardTitle = styled.div`
-  color: #000000;
-  font-size: 22px;
-  font-weight: normal;
-  align-self: center;
-  height: 25px;
-  display: flex;
-  align-items: center;
+const CardTitle = styled.p`
+  position: absolute;
+  background-color: red;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 268px;
 `
 
 const CardImage = styled.img`
-  height: 150px;
-  width: 150px;
-  align-self: center;
-  border-radius: 50%;
+  height: 340px;
+  width: 340px;
+  border-radius: 10px;
+  background: #FF6060;
+`
+
+const CardOverlay = styled.div`
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
 `
 
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 15px;
-  background-color: ${colors.backgroundLight};
-  border-radius: 30px;
-  width: 300px;
-  height: 300px;
-  &:hover {
-    cursor: pointer;
-    box-shadow: 2px 2px 10px #000000;
-    transform: scale(1.05);
-    transition: all 0.1s ease;
-  }
 `
 
-function Card({ label, title, picture }) {
-  const [isFavorite, setIsFavorite] = useState(false)
-  const heart = isFavorite ? '❤' : ''
+function Card({ title, picture }) {
 
   return (
-    <CardWrapper onClick={() => setIsFavorite(!isFavorite)}>
-      <CardLabel>{label}</CardLabel>
-      <CardImage src={picture} alt="freelance" />
-      <CardTitle>{heart} {title} {heart}</CardTitle>
+    <CardWrapper>
+      <CardOverlay></CardOverlay>
+      <CardImage src={picture} alt="photo logement" />
+      <CardTitle> {title} </CardTitle>
     </CardWrapper>
   )
 }

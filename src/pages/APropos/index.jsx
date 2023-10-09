@@ -8,7 +8,6 @@ const AProposWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
   margin: 38px 100px;
   gap: 30px;
 `

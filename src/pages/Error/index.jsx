@@ -31,6 +31,7 @@ const ErrorRedirectionLink = styled(Link)`
   font-size: 18px;
   color:#FF6060;
   margin-bottom: 139px;
+  text-decoration: underline;
 `
 
 function Error() {

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import FooterImg from '../../assets/Footer/Desktop_Footer.png'
 
 const FooterLogo = styled.img`
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
