@@ -16,12 +16,12 @@ const CardTitle = styled.p`
 function Card({ id, title, cover }) {
   return (
     <CardsWrapper className="cards-wrapper">
-      {logementsData.map((house) => (
-        <Link to={`/logement/${house.id}`} key={house.id}>
+      {logementsData.map((logement) => (
+        <Link to={`/logement/${logement.id}`} key={logement.id}>
           <div className="card">
-            <CardImage src={house.cover} alt="" />
+            <CardImage src={logement.cover} alt="" />
             <div className="card-title">
-              <CardTitle>{house.title}</CardTitle>
+              <CardTitle>{logement.title}</CardTitle>
             </div>
           </div>
         </Link>

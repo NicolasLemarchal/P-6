@@ -1,3 +1,21 @@
+.header-container {
+  margin: 40px 100px 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 70px;
+}
+
+.nav-container {
+  width: 309px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 57px;
+}
+
 a {
   font-weight: 500;
   font-size: 24px;
