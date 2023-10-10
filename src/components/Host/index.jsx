@@ -4,6 +4,7 @@ import './Host.css'
 
 const HostBody = styled.div`
   display: flex;
+  align-items: center
 `
 
 const HostName = styled.p`

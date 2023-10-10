@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import logementsData from '../../data/logements.json'
 import Carousel from '../../components/Carousel';
 import Host from '../../components/Host'
+import Rating from '../../components/Rating';
 import Error from '../Error';
 
 const LogementBody = styled.div`
@@ -52,6 +53,7 @@ function Logements() {
         </InfoHouseWrapper>
         <InfoHostAndRating>
           <Host name={house.host.name} picture={house.host.picture} />
+          <Rating rating={house.rating}></Rating>
         </InfoHostAndRating>
       </InfoBody>
     </LogementBody>
