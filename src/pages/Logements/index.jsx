@@ -1,31 +1,38 @@
-import React, { useState } from 'react';
-import Card from '../../components/Card'
-import styled from 'styled-components'
-import logementsData from '../../data/logements.json';
+import React from 'react';
+import { useParams } from "react-router-dom";
+import styled from 'styled-components';
+import logementsData from '../../data/logements.json'
+import Carousel from '../../components/Carousel';
+import Error from '../Error/index.jsx';
 
-const CardsContainer = styled.div`
-  display: grid;
-  gap: 24px;
-  grid-template-rows: 350px 350px;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
+const LogementBody = styled.div`
+  width: calc(100% - 200px);
+  height: 643px;
+  margin: 50px 100px;
+`
+
+const LogementTitle = styled.h1`
+  color: #FF6060;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0px;
 `
 
 function Logements() {
-  const [data] = useState(logementsData || []);
+  const { id } = useParams();
+  const house = logementsData.find((logement) => logement.id === id);
+
+  if (!house) {
+    return <Error />;
+  }
 
   return (
-    <CardsContainer>
-      {data.map((logements) => (
-        <Card
-          key={logements.id}
-          title={logements.title}
-          picture={logements.pictures}
-        />
-      ))}
-    </CardsContainer>
+    <LogementBody>
+      <Carousel images={house.pictures} />
+      <LogementTitle>{house.title}</LogementTitle>
+    </LogementBody>
   );
 }
 
-export default Logements
+export default Logements;

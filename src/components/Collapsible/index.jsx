@@ -1,4 +1,4 @@
-import ArrowIcone from '../../assets/Dropdown/arrow.png'
+import ArrowIcone from '../../assets/Dropdown + Carousel/arrow.png'
 import React, { useState } from 'react';
 import styled from 'styled-components'
 
