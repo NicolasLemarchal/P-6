@@ -30,7 +30,7 @@ const Button = styled.button`
   font-weight: 500;
 `
 
-const Valeurs = styled.h4`
+const Valeurs = styled.p`
   background-color: #F6F6F6;
   color: #FF6060;
   margin: 0px;

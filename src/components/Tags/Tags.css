@@ -1,0 +1,17 @@
+.logement-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.logement-tag {
+  width: auto;
+  padding: 3px 40px;
+  background: #FF6060;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142.6%;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}/*# sourceMappingURL=Tags.css.map */

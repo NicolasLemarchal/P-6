@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Arrow from '../../assets/Dropdown + Carousel/arrow.png'
+import Arrow from '../../assets/Dropdown + Carousel/big-arrow.png'
 
 const ImgCarousel = styled.img`
   width: 100%;
@@ -16,7 +16,7 @@ const BtnCarouselLeft = styled.img`
   height: 80px;
   color: #FFFFFF;
   top: 326.5px;
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 `
 
 const BtnCarouselRight = styled.img`
@@ -26,7 +26,7 @@ const BtnCarouselRight = styled.img`
   color: #FFFFFF;
   right: 96px;
   top: 326.5px;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 `
 
 const Carousel = ({ images }) => {
