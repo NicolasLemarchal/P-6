@@ -20,6 +20,12 @@
   font-style: normal;
   font-weight: 500;
 }
+@media screen and (max-width: 806px) {
+  .collapsible-button {
+    height: 30px;
+    font-size: 13px;
+  }
+}
 
 .toggle {
   display: flex;
@@ -34,6 +40,11 @@
   margin: 5px 0px;
   border-radius: 5px;
 }
+@media screen and (max-width: 806px) {
+  .valeurs {
+    font-size: 14px;
+  }
+}
 .valeurs.content-close {
   margin: 0px;
   max-height: 0;
@@ -43,4 +54,15 @@
 .valeurs.content-open {
   max-height: 500px;
   transition: max-height 0.5s linear;
+}
+
+.arrow-img {
+  width: 32px;
+  height: 32px;
+}
+@media screen and (max-width: 806px) {
+  .arrow-img {
+    width: 16px;
+    height: 16px;
+  }
 }/*# sourceMappingURL=collapsible.css.map */

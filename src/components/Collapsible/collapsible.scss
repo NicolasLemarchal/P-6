@@ -21,6 +21,10 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
+  @media screen and (max-width: 806px) {
+    height: 30px;
+    font-size: 13px;
+  }
 }
 
 .toggle {
@@ -35,6 +39,9 @@
   color: $primary;
   margin: 5px 0px;
   border-radius: 5px;
+  @media screen and (max-width: 806px) {
+    font-size: 14px;
+  }
   &.content-close {
     margin: 0px;
     max-height: 0;
@@ -44,5 +51,14 @@
   &.content-open {
     max-height: 500px;
     transition: max-height 0.5s linear;
+  }
+}
+
+.arrow-img {
+  width: 32px;
+  height: 32px;
+  @media screen and (max-width: 806px) {
+    width: 16px;
+    height: 16px;
   }
 }

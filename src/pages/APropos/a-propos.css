@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   margin: 38px 100px;
-  gap: 30px;
 }
 @media screen and (max-width: 806px) {
   .a-propos-wrapper {
@@ -16,14 +15,29 @@
 
 .illustration {
   width: 100%;
-  height: 263px;
+  height: 223px;
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 806px) {
   .illustration {
+    height: 111px;
     margin-bottom: 0px;
+  }
+}
+
+.btn-collapside-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 100px;
+  gap: 30px;
+}
+@media screen and (max-width: 806px) {
+  .btn-collapside-wrapper {
+    gap: 20px;
+    margin: 0px;
   }
 }/*# sourceMappingURL=a-propos.css.map */

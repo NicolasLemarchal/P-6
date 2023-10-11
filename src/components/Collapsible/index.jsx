@@ -33,7 +33,7 @@ const Collapsible = (props) => {
     <CollapsibleWrapper className='collapsible-wrapper'>
       <CollapsibleButton className='collapsible-button' onClick={toggle}>
         {props.buttonText}
-        <ArrowImg src={ArrowIcone} alt="Arrow" rotated={arrowRotated} />
+        <ArrowImg className='arrow-img' src={ArrowIcone} alt="Arrow" rotated={arrowRotated} />
       </CollapsibleButton>
       <ValeursBox className="toggle">
         <Valeurs className={`valeurs ${open ? 'content-open' : 'content-close'}`}>{props.valeursText}</Valeurs>
