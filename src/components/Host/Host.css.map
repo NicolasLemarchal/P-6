@@ -1,1 +1,1 @@
-{"version":3,"sources":["Host.scss","Host.css"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,iBAAA;ACCF","file":"Host.css"}
+{"version":3,"sources":["host.scss","host.css","../../style/colors.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,mBAAA;ACDF;;ADIA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,iBAAA;ACDF;;ADIA;EACE,WAAA;EACA,eAAA;EACA,iBAAA;EACA,iBAAA;EACA,cEnBQ;EFoBR,WAAA;ACDF","file":"host.css"}

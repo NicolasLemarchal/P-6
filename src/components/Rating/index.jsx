@@ -1,7 +1,11 @@
 import React from "react";
+import styled from 'styled-components';
 import StarActive from "../../assets/Rating/star-active.png";
 import StarInactive from "../../assets/Rating/star-inactive.png";
-import './Rating.css'
+import './rating.css'
+
+const StarRating = styled.div`
+`
 
 function Rating(props) {
   const range = [1, 2, 3, 4, 5];
@@ -20,7 +24,7 @@ function Rating(props) {
     );
   }
 
-  return <div className="star-rating">{stars}</div>;
+  return <StarRating className="star-rating">{stars}</StarRating>;
 }
 
 export default Rating;

@@ -8,46 +8,27 @@ import Rating from '../../components/Rating';
 import Collapsible from '../../components/Collapsible';
 import Tags from '../../components/Tags';
 import Error from '../Error';
+import './logements.css'
 
 const LogementBody = styled.div`
-  width: calc(100% - 200px);
-  margin: 50px 100px;
 `
 
 const InfoBody = styled.div`
-  display: flex;
-  justify-content: space-between;
 `
 
 const LogementTitle = styled.h1`
-  color: #FF6060;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-  margin: 0px;
 `
 
 const LogementLocation = styled.h2`
-  color: #FF6060;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-  margin: 0px;
 `
 
 const InfoHouseWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
 `
 
 const InfoHostAndRating = styled.div`
-  display: flex;
-  flex-direction: column;
 `
 
 const CollapsibleDiv = styled.div`
-  display: flex;
-  gap: 76px;
 `
 
 function Logements() {
@@ -59,23 +40,23 @@ function Logements() {
   }
 
   return (
-    <LogementBody>
+    <LogementBody className='logement-body'>
       <Carousel images={house.pictures} />
-      <InfoBody>
-        <InfoHouseWrapper>
-          <LogementTitle>{house.title}</LogementTitle>
-          <LogementLocation>{house.location}</LogementLocation>
+      <InfoBody className='info-body'>
+        <InfoHouseWrapper className='info-house-wrapper'>
+          <LogementTitle className='logement-title'>{house.title}</LogementTitle>
+          <LogementLocation className='logement-location'>{house.location}</LogementLocation>
           <Tags tags={house.tags}/>
         </InfoHouseWrapper>
-        <InfoHostAndRating>
+        <InfoHostAndRating className='info-host_rating'>
           <Host name={house.host.name} picture={house.host.picture} />
           <Rating rating={house.rating}></Rating>
         </InfoHostAndRating>
       </InfoBody>
-      <CollapsibleDiv>
+      <CollapsibleDiv className='collapside-div'>
         <Collapsible buttonText="Description" valeursText={house.description} />
         <Collapsible buttonText="Équipements" valeursText={house.equipments.map((equipments, index) => (
-          <li key={index}>{equipments}</li>
+          <li className='equipement' key={index}>{equipments}</li>
         ))} />
       </CollapsibleDiv>
     </LogementBody>

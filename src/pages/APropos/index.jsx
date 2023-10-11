@@ -2,29 +2,19 @@ import React from 'react';
 import styled from 'styled-components'
 import AProposImg from '../../assets/A-Propos/Image source 2.png'
 import Collapsible from '../../components/Collapsible'
+import './a-propos.css'
 
 const AProposWrapper = styled.div`
-  width: calc(100% - 200px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 38px 100px;
-  gap: 30px;
 `
 
 const Illustration = styled.img`
-  width: calc(100%);
-  height: 263px;
-  border-radius: 25px;
-  object-fit: cover;
-  margin-bottom: 8px;
 `
 
 function APropos() {
 
   return (
-    <AProposWrapper>
-      <Illustration src={AProposImg} />
+    <AProposWrapper className='a-propos-wrapper'>
+      <Illustration className='illustration' src={AProposImg} />
       <Collapsible buttonText="Fiabilité" valeursText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
  régulièrement vérifiées par nos équipes." />
       <Collapsible buttonText="Respect" valeursText="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de

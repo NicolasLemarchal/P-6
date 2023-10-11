@@ -1,10 +1,12 @@
+@import '../../style/colors.scss';
+
 .cards-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   position: relative;
-  background: #f6f6f6;
+  background: $background-light;
   border-radius: 25px;
   margin-bottom: 50px;
   padding: 56px;
@@ -29,7 +31,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  color: #FFF;
+  color: $secondary;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;

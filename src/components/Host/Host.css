@@ -1,6 +1,20 @@
+.host-body {
+  display: flex;
+  align-items: center;
+}
+
 .host-picture {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   margin-left: 10px;
-}/*# sourceMappingURL=Host.css.map */
+}
+
+.host-name {
+  width: 78px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: right;
+  color: #FF6060;
+  margin: 0px;
+}/*# sourceMappingURL=host.css.map */

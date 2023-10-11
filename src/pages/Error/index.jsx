@@ -1,47 +1,28 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import colors from '../../utils/style/colors'
 import ErrorImg from '../../assets/Error/404.png'
+import './error.css'
 
-const ErrorWrapper = styled.div`
-  margin-top: 139px;
-  display: flex;
-  flex-direction: column;
-  background-color: ${colors.background};
-  align-items: center;
-  justify-content: space-between;
+const ErrorWrapper = styled.div`=
 `
 
-const Illustration = styled.img`
-  width: 597px;
-  height: 263px;
-  margin-bottom: 139px;
+const ErrorIllustration = styled.img`
 `
 
 const ErrorSubtitle = styled.h2`
-  font-weight: 500;
-  font-size: 36px;
-  color:#FF6060;
-  margin-top: 0px;
-  margin-bottom: 139px;
 `
 
 const ErrorRedirectionLink = styled(Link)`
-  font-weight: 500;
-  font-size: 18px;
-  color:#FF6060;
-  margin-bottom: 139px;
-  text-decoration: underline;
 `
 
 function Error() {
   return (
-    <ErrorWrapper>
-      <Illustration src={ErrorImg} />
-      <ErrorSubtitle>
+    <ErrorWrapper className='error-wrapper'>
+      <ErrorIllustration className='error-illustration' src={ErrorImg} />
+      <ErrorSubtitle className='error-subtile'>
         Oups! La page que vous demandez n'existe pas.
       </ErrorSubtitle>
-      <ErrorRedirectionLink to="/">
+      <ErrorRedirectionLink className='error-redirection-link' to="/">
         Retourner sur la page d'accueil
       </ErrorRedirectionLink>
     </ErrorWrapper>

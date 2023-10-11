@@ -1,12 +1,12 @@
 import Card from '../../components/Card'
 import styled from 'styled-components'
-import HomeIllustration from '../../assets/Home/Image source 1.png'
+import Illustration from '../../assets/Home/Image source 1.png'
 import "./home.css";
 
 const HomeWrapper = styled.div`
 `
 
-const Illustration = styled.img`
+const HomeIllustration = styled.img`
 `
 
 const Overlay = styled.div`
@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <HomeWrapper className='home-wrapper'>
-      <Illustration src={HomeIllustration} className='illustration' />
+      <HomeIllustration src={Illustration} className='home-illustration' />
       <Overlay className='overlay'>
       </Overlay>
       <TextImg className='text-img'>

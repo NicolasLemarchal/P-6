@@ -1,0 +1,32 @@
+@import '../../style/colors.scss';
+
+.error-wrapper {
+  margin-top: 139px;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-light;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error-illustration {
+  width: 597px;
+  height: 263px;
+  margin-bottom: 139px;
+}
+
+.error-subtile {
+  font-weight: 500;
+  font-size: 36px;
+  color:$primary;
+  margin-top: 0px;
+  margin-bottom: 139px;
+}
+
+.error-redirection-link {
+  font-weight: 500;
+  font-size: 18px;
+  color:$primary;
+  margin-bottom: 139px;
+  text-decoration: underline;
+}

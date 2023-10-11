@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import "./Tags.css";
+import "./tags.css";
 
 const TagsContainer = styled.div`
 `

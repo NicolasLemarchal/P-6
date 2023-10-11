@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import GlobalStyle from './utils/style/general-style'
+import GlobalStyle from './style/general-style'
 import Home from './pages/Home/index.jsx'
 import Logements from './pages/Logements/index.jsx'
 import APropos from './pages/APropos/index.jsx'

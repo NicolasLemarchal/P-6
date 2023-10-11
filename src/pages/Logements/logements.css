@@ -1,0 +1,44 @@
+.equipement {
+  list-style-type: none;
+}
+
+.logement-body {
+  width: calc(100% - 200px);
+  margin: 50px 100px;
+}
+
+.info-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logement-title {
+  color: #FF6060;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.logement-location {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.info-house-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-host_rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.collapside-div {
+  display: flex;
+  gap: 76px;
+}/*# sourceMappingURL=logements.css.map */

@@ -1,3 +1,5 @@
+@import '../../style/colors.scss';
+
 .header-container {
   margin: 40px 100px 0px 100px;
   display: flex;
@@ -19,7 +21,7 @@
 a {
   font-weight: 500;
   font-size: 24px;
-  color:#FF6060;
+  color:$primary;
   text-decoration: none;
 }
 

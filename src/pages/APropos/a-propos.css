@@ -1,0 +1,17 @@
+.a-propos-wrapper {
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 38px 100px;
+  gap: 30px;
+}
+
+.illustration {
+  width: 100%;
+  height: 263px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 8px;
+}/*# sourceMappingURL=a-propos.css.map */
