@@ -7,6 +7,11 @@
   align-items: center;
   margin: 38px 100px;
   gap: 30px;
+  @media screen and (max-width: 806px) {
+    width: calc(100% - 40px);
+    margin: 19px 20px;
+    gap: 20px;
+  }
 }
 
 .illustration {
@@ -15,4 +20,7 @@
   border-radius: 25px;
   object-fit: cover;
   margin-bottom: 8px;
+  @media screen and (max-width: 806px) {
+    margin-bottom: 0px;
+  }
 }
