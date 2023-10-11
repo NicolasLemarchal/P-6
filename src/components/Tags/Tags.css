@@ -5,7 +5,7 @@
 
 .logement-tag {
   width: auto;
-  padding: 3px 40px;
+  padding: 3px 30px;
   background: #FF6060;
   color: #FFFFFF;
   font-size: 14px;
@@ -14,4 +14,14 @@
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 24px;
+}
+@media screen and (max-width: 806px) {
+  .logement-tag {
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 142.6%;
+    padding: 2px 20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
 }/*# sourceMappingURL=tags.css.map */

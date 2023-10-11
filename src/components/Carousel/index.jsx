@@ -12,6 +12,9 @@ const BtnCarouselLeft = styled.img`
 const BtnCarouselRight = styled.img`
 `
 
+const CarouselCounter = styled.p`
+`
+
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,6 +41,9 @@ const Carousel = ({ images }) => {
       {images.length > 1 && (
       <BtnCarouselRight className='btn-carousel__right' src={Arrow} onClick={goToNextSlide} alt='' />
       )}
+      <CarouselCounter className="carousel-counter">
+        {currentIndex + 1}/{images.length}
+      </CarouselCounter>
     </div>
   );
 };
