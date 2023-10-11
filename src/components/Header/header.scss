@@ -11,7 +11,12 @@
 }
 
 .header-logo {
-  height: 70px;
+  width: 210px;
+  height: 68px;
+  @media screen and (max-width: 806px) {
+    width: 145px;
+    height: 47px;
+  }
 }
 
 .nav-container {
@@ -19,14 +24,23 @@
   display: flex;
   justify-content: flex-end;
   gap: 57px;
+  @media screen and (max-width: 806px) {
+    gap: 26px;
+  }
+  a {
+    font-weight: 500;
+    font-size: 24px;
+    color:$primary;
+    text-decoration: none;
+    @media screen and (max-width: 806px) {
+      font-size: 12px;
+      line-height: 17px;
+      text-transform: uppercase;
+    }
+  }
 }
 
-a {
-  font-weight: 500;
-  font-size: 24px;
-  color:$primary;
-  text-decoration: none;
-}
+
 
 .active {
   text-decoration: underline;

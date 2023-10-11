@@ -11,7 +11,14 @@
 }
 
 .header-logo {
-  height: 70px;
+  width: 210px;
+  height: 68px;
+}
+@media screen and (max-width: 806px) {
+  .header-logo {
+    width: 145px;
+    height: 47px;
+  }
 }
 
 .nav-container {
@@ -20,12 +27,23 @@
   justify-content: flex-end;
   gap: 57px;
 }
-
-a {
+@media screen and (max-width: 806px) {
+  .nav-container {
+    gap: 26px;
+  }
+}
+.nav-container a {
   font-weight: 500;
   font-size: 24px;
   color: #FF6060;
   text-decoration: none;
+}
+@media screen and (max-width: 806px) {
+  .nav-container a {
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
 }
 
 .active {
