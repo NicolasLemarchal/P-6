@@ -37,7 +37,7 @@
 .valeurs {
   width: calc(100% - 30px);
   color: $primary;
-  margin: 5px 0px;
+  margin: 0px;
   border-radius: 5px;
   @media screen and (max-width: 806px) {
     font-size: 12px;
@@ -46,11 +46,11 @@
     margin: 0px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s linear;
+    transition: max-height 0.3s linear;
   }
   &.content-open {
     max-height: 500px;
-    transition: max-height 0.5s linear;
+    transition: max-height 0.3s linear;
   }
 }
 
