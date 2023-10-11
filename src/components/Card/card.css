@@ -10,6 +10,18 @@
   padding: 56px;
   gap: 56px;
 }
+@media screen and (max-width: 1072px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 806px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+}
 
 .card {
   position: relative;

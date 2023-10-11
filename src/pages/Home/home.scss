@@ -7,6 +7,11 @@
   align-items: center;
   margin: 50px 100px;
   gap: 43px;
+  @media screen and (max-width: 806px) {
+    width: calc(100% - 40px);
+    margin: 27px 20px;
+    gap: 22px;
+  }
 }
 
 .home-illustration {
@@ -25,6 +30,9 @@
   opacity: 0.3;
   background: $background-dark;
   mix-blend-mode: darken;
+  @media screen and (max-width: 806px) {
+    width: calc(100% - 40px);
+  }
 }
 
 .text-img {
