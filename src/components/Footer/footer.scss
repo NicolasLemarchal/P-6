@@ -1,7 +1,22 @@
 @import '../../style/colors.scss';
 
-.footer-logo {
+.footer-container {
   width: 100%;
-  height: 209px;
-  object-fit: cover;
+  text-align: center;
+  color: $secondary;
+  background-color: $background-dark;
+  padding-top: 66px;
+  padding-bottom: 29px;
+  & img {
+    width: 122px;
+    height: 39px;
+    margin-bottom: 28.56px;
+  }
+  & p {
+    height: 46px;
+    color: $secondary;
+    font-size: 24px;
+    line-height: 142.6%;
+    margin: 0px;
+  }
 }

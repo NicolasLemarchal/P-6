@@ -1,6 +1,20 @@
-.footer-logo {
+.footer-container {
   width: 100%;
-  height: 209px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding-top: 66px;
+  padding-bottom: 29px;
+}
+.footer-container img {
+  width: 122px;
+  height: 39px;
+  margin-bottom: 28.56px;
+}
+.footer-container p {
+  height: 46px;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 142.6%;
+  margin: 0px;
 }/*# sourceMappingURL=footer.css.map */
