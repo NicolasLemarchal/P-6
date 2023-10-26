@@ -33,11 +33,9 @@
   flex-direction: column;
   align-items: center;
   margin: 0px 100px;
-  gap: 30px;
 }
 @media screen and (max-width: 806px) {
   .btn-collapside-wrapper {
-    gap: 20px;
     margin: 0px;
   }
 }/*# sourceMappingURL=a-propos.css.map */

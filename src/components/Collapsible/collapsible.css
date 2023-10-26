@@ -30,7 +30,6 @@
 .toggle {
   display: flex;
   justify-content: center;
-  background-color: #F6F6F6;
   width: 100%;
 }
 
@@ -38,7 +37,10 @@
   width: calc(100% - 30px);
   color: #FF6060;
   margin: 0px;
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 15px;
   border-radius: 5px;
+  background-color: #F6F6F6;
 }
 @media screen and (max-width: 806px) {
   .valeurs {
@@ -46,14 +48,17 @@
   }
 }
 .valeurs.content-close {
+  height: 0;
   margin: 0px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s linear;
+  transform-origin: 50% 0%;
+  transform: scaleY(0);
+  transition: transform 250ms;
 }
 .valeurs.content-open {
-  max-height: 500px;
-  transition: max-height 0.3s linear;
+  height: auto;
+  transform-origin: 50% 0%;
+  transform: scaleY(1);
+  transition: transform 250ms;
 }
 
 .arrow-img {
