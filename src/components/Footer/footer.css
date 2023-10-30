@@ -5,6 +5,8 @@
   background-color: #000000;
   padding-top: 66px;
   padding-bottom: 29px;
+  position: fixed;
+  bottom: 0;
 }
 .footer-container img {
   width: 122px;

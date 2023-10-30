@@ -7,6 +7,7 @@ const StyledGlobalStyle = createGlobalStyle`
 
     body {
         margin: 0;
+        margin-bottom: 212px;
         padding: 0;
     }
 `
