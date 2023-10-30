@@ -1,0 +1,23 @@
+.gallerie-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  background: #F6F6F6;
+  border-radius: 25px;
+  padding: 56px;
+  gap: 56px;
+}
+@media screen and (max-width: 1072px) {
+  .gallerie-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 806px) {
+  .gallerie-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+}/*# sourceMappingURL=gallerie.css.map */

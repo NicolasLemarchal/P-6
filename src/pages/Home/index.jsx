@@ -1,4 +1,4 @@
-import Card from '../../components/Card'
+import Gallerie from '../../components/Gallerie'
 import styled from 'styled-components'
 import Illustration from '../../assets/Home/Image source 1.png'
 import "./home.css";
@@ -30,7 +30,7 @@ function Home() {
         Chez vous, partout et ailleurs
       </TextImg>
       <HomeContainer className='home-container'>
-        <Card/>
+        <Gallerie/>
       </HomeContainer>
     </HomeWrapper>
   )
